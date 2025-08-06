@@ -32,12 +32,13 @@ You may need to modify the script to specify your model path and settings.
 After running the script, type your message in the terminal and watch the model respond.
 Press Ctrl+C to exit the chat.
 
-For advanced configuration, update parameters in llama_chatbot.py (e.g., model path, prompt template, context length, etc.)
+For advanced configuration, update parameters in llama_chatbot.py (e.g., model path, prompt template, context length, etc.)      
+	               
+| File Overview       | File	Description |  |
+|---------------------|-------------------|-
+| llama_chatbot.py	  | Main Python script to run chat    | 
+| README.md           |Project documentation|
 
-**File Overview**        **File	Description**
-
-llama_chatbot.py	       Main Python script to run chat
-README.md	               Project documentation
 
 **Contributing**
 Contributions, issues, and feature requests are welcome! Please fork the repository and make a pull request.
