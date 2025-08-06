@@ -1,4 +1,4 @@
-# Local-LLM-Chat-Interface-using-llama-cpp-python
+# Local LLM Chat Interface using llama.cpp-python
 
 A simple Python chat interface for running large language models (LLMs) locally using llama.cpp via Python bindings. This repository helps you interact with LLMs on your local machine through a convenient terminal chatbot.
 
