@@ -1,56 +1,63 @@
-# Local LLM Chat Interface using llama.cpp-python
+# VISIX - Local LLM Chat Interface
 
-A simple Python chat interface for running large language models (LLMs) locally using llama.cpp via Python bindings. This repository helps you interact with LLMs on your local machine through a convenient terminal chatbot.
+VISIX is a lightweight, local chatbot interface powered by 'llama-cpp-python'. Designed to run Large Language Models (LLMs) entirely on your machine, VISIX comes with a distinct personality-witty, sarcastic, and helpful.
 
-**Features**
-Local Inference: Run Llama-based models without relying on cloud services or external APIs.
+## Features
 
-Python Interface: Chat with the model interactively using a native Python script.
+- **Local Inference**: Run powerful LLMs like Mistral locally without internet dependency.
+- **Distinct Persona**: VISIX isn't just a bot; it's a sarcastic assistant with a dry sense of humor.
+- **Interactive Shell**: A clean terminal-based chat interface.
+- **Streaming Responses**: Real-time text generation.
+- **Logging**: Automatically logs conversations to 'log.txt'.
 
-Customization: Easily configure models, adjust prompts, and tweak settings in the script.
+## Prerequisites
 
-**Prerequisites**
-Python 3.8+
-llama.cpp (with Python bindings)(https://github.com/abetlen/llama-cpp-python)
-Supported Llama-based model in .bin, .gguf, or similar format(https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF)
+- Python 3.8+
+- llama-cpp-python
+- A GGUF model file (e.g., Mistral-7B-Instruct)
 
-**Setup**
-Clone the repository:
-git clone https://github.com/Vishalkompalli/Local-LLM-Chat-Interface-using-llama-cpp-python.git
-cd Local-LLM-Chat-Interface-using-llama-cpp-python
+## Installation
 
-**Install dependencies:**
-(Install Python dependencies as needed and set up llama-cpp-python.)
-Download a compatible Llama model.
-Follow llama.cpp model download instructions for guidance.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Vishalkompalli/Local-LLM-Chat-Interface-using-llama-cpp-python.git
+   cd Local-LLM-Chat-Interface-using-llama-cpp-python
+   ```
+
+2. **Install dependencies:**
+   Ensure you have a C++ compiler installed for llama-cpp-python.
+   ```bash
+   pip install llama-cpp-python
+   ```
+   *Note: Refer to the [llama-cpp-python documentation](https://github.com/abetlen/llama-cpp-python) for hardware-specific installation (CUDA, Metal, etc.).*
+
+3. **Download a Model:**
+   Download a GGUF model (e.g., from [TheBloke on Hugging Face](https://huggingface.co/TheBloke)) and place it in a known directory.
+
+4. **Configuration:**
+   Open 'llama_chatbot.py' and update the 'MODEL_PATH' variable to point to your downloaded model file.
+   ```python
+   MODEL_PATH = r"path\to\your\model.gguf"
+   ```
+
+## Usage
 
 Run the chatbot:
+```bash
 python llama_chatbot.py
-You may need to modify the script to specify your model path and settings.
+```
 
-**Usage**
-After running the script, type your message in the terminal and watch the model respond.
-Press Ctrl+C to exit the chat.
+Type your message and press Enter. Type 'exit' or 'quit' to end the session.
 
-For advanced configuration, update parameters in llama_chatbot.py (e.g., model path, prompt template, context length, etc.)      
-	               
-| File Overview       | File	Description |  |
-|---------------------|-------------------|-
-| llama_chatbot.py	  | Main Python script to run chat    | 
-| README.md           |Project documentation|
+## Contributing
 
+Contributions are welcome! Please open an issue or submit a pull request.
 
-**Contributing**
-Contributions, issues, and feature requests are welcome! Please fork the repository and make a pull request.
+## License
 
-**License**
-This project is open source and provided as-is for research and personal use. Refer to the license file (if available) or clarify your use cases as needed.
+This project is open-source.
 
-**Acknowledgements**
-Built upon llama.cpp.
-https://github.com/abetlen
-https://huggingface.co/
+## Acknowledgements
 
-Inspired by the open-source LLM community.
-
-For any questions or support, please raise an issue in the repository.
+- [llama.cpp](https://github.com/ggerganov/llama.cpp)
+- [llama-cpp-python](https://github.com/abetlen/llama-cpp-python)
