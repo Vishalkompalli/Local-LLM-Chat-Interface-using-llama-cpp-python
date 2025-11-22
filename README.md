@@ -1,6 +1,6 @@
 # VISIX - Local LLM Chat Interface
 
-VISIX is a lightweight, local chatbot interface powered by 'llama-cpp-python'. Designed to run Large Language Models (LLMs) entirely on your machine, VISIX comes with a distinct personality-witty, sarcastic, and helpful.
+VISIX is a lightweight, local chatbot interface powered by 'llama-cpp-python'. Designed to run Large Language Models (LLMs) entirely on your machine, VISIX comes with a distinct personality—witty, sarcastic, and helpful.
 
 ## Features
 
@@ -13,22 +13,18 @@ VISIX is a lightweight, local chatbot interface powered by 'llama-cpp-python'. D
 ## Prerequisites
 
 - Python 3.8+
-- llama-cpp-python
+- 'llama-cpp-python'
 - A GGUF model file (e.g., Mistral-7B-Instruct)
 
 ## Installation
 
 1. **Clone the repository:**
-   ```bash
    git clone https://github.com/Vishalkompalli/Local-LLM-Chat-Interface-using-llama-cpp-python.git
    cd Local-LLM-Chat-Interface-using-llama-cpp-python
-   ```
 
 2. **Install dependencies:**
-   Ensure you have a C++ compiler installed for llama-cpp-python.
-   ```bash
+   Ensure you have a C++ compiler installed for 'llama-cpp-python'.
    pip install llama-cpp-python
-   ```
    *Note: Refer to the [llama-cpp-python documentation](https://github.com/abetlen/llama-cpp-python) for hardware-specific installation (CUDA, Metal, etc.).*
 
 3. **Download a Model:**
@@ -36,16 +32,12 @@ VISIX is a lightweight, local chatbot interface powered by 'llama-cpp-python'. D
 
 4. **Configuration:**
    Open 'llama_chatbot.py' and update the 'MODEL_PATH' variable to point to your downloaded model file.
-   ```python
    MODEL_PATH = r"path\to\your\model.gguf"
-   ```
 
 ## Usage
 
 Run the chatbot:
-```bash
 python llama_chatbot.py
-```
 
 Type your message and press Enter. Type 'exit' or 'quit' to end the session.
 
