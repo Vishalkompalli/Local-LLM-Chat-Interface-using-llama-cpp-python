@@ -1,6 +1,6 @@
 # VISIX - Local LLM Chat Interface
 
-VISIX is a lightweight, local chatbot interface powered by 'llama-cpp-python'. Designed to run Large Language Models (LLMs) entirely on your machine, VISIX comes with a distinct personality—witty, sarcastic, and helpful.
+VISIX - acronym for 'Virtual Intelligence System for Insight and eXecution' is a lightweight, local chatbot interface powered by 'llama-cpp-python'. Designed to run Large Language Models (LLMs) entirely on your machine, VISIX comes with a distinct personality—witty, sarcastic, and helpful.
 
 ## Features
 
